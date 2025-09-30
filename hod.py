@@ -3,6 +3,7 @@ import csv
 from pathlib import Path
 
 # ---- Helpers merged ----
+#test change
 def to_float_safe(value):
     try:
         return float(str(value).strip())
