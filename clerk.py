@@ -52,7 +52,7 @@ def add_student_interactive():
 
 def delete_student_interactive():
     print("\n--- Delete student (Clerk) ---")
-    roll = input("Enter Roll_No: ").strip()
+    roll = input("Enter Roll No: ").strip()
     students = read_students()
     for i, s in enumerate(students):
         if s["Roll_No"].strip() == roll:
@@ -64,7 +64,7 @@ def delete_student_interactive():
                 log(f"CLERK_DELETE Roll:{roll}")
                 print("Right Deleted.")
             else:
-                print("Cancelled.")
+                print("Cancelled")
             return
     print("Wrong Roll not found.")
 
