@@ -19,7 +19,7 @@ def ensure_csv(path=STUDENTS_CSV):
         with path.open("w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=HEADERS)
             writer.writeheader()
-
+#students function
 def read_students():
     ensure_csv(STUDENTS_CSV)
     with STUDENTS_CSV.open("r", newline="", encoding="utf-8") as f:
